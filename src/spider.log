@@ -1,0 +1,166 @@
+01/14/2018 10:46:35 INFO: Initializing the task...
+01/14/2018 10:46:38 DEBUG: POST http://127.0.0.1:57745/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 10:46:38 DEBUG: Finished Request {'sessionId': '1bcce4e0-f942-11e7-a2bc-af3ab8b65c4c', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 10:46:38 DEBUG: POST http://127.0.0.1:57745/wd/hub/session/1bcce4e0-f942-11e7-a2bc-af3ab8b65c4c/url {"url": "http://jandan.net/pic", "sessionId": "1bcce4e0-f942-11e7-a2bc-af3ab8b65c4c"}
+01/14/2018 10:46:46 DEBUG: Finished Request {'sessionId': '1bcce4e0-f942-11e7-a2bc-af3ab8b65c4c', 'status': 0, 'value': {}}
+01/14/2018 10:46:46 DEBUG: GET http://127.0.0.1:57745/wd/hub/session/1bcce4e0-f942-11e7-a2bc-af3ab8b65c4c/source {"sessionId": "1bcce4e0-f942-11e7-a2bc-af3ab8b65c4c"}
+01/14/2018 10:46:46 DEBUG: DELETE http://127.0.0.1:57745/wd/hub/session/1bcce4e0-f942-11e7-a2bc-af3ab8b65c4c {"sessionId": "1bcce4e0-f942-11e7-a2bc-af3ab8b65c4c"}
+01/14/2018 10:46:46 DEBUG: Finished Request {'sessionId': '1bcce4e0-f942-11e7-a2bc-af3ab8b65c4c', 'status': 0, 'value': {}}
+01/14/2018 10:46:50 DEBUG: POST http://127.0.0.1:57817/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 10:46:50 DEBUG: Finished Request {'sessionId': '2297a210-f942-11e7-a877-adfc3b386b8c', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 10:46:50 DEBUG: POST http://127.0.0.1:57817/wd/hub/session/2297a210-f942-11e7-a877-adfc3b386b8c/url {"url": "http://jandan.net/pic/page-163", "sessionId": "2297a210-f942-11e7-a877-adfc3b386b8c"}
+01/14/2018 10:46:54 DEBUG: Finished Request {'sessionId': '2297a210-f942-11e7-a877-adfc3b386b8c', 'status': 0, 'value': {}}
+01/14/2018 10:46:54 DEBUG: GET http://127.0.0.1:57817/wd/hub/session/2297a210-f942-11e7-a877-adfc3b386b8c/source {"sessionId": "2297a210-f942-11e7-a877-adfc3b386b8c"}
+01/14/2018 10:46:55 DEBUG: DELETE http://127.0.0.1:57817/wd/hub/session/2297a210-f942-11e7-a877-adfc3b386b8c {"sessionId": "2297a210-f942-11e7-a877-adfc3b386b8c"}
+01/14/2018 10:46:55 DEBUG: Finished Request {'sessionId': '2297a210-f942-11e7-a877-adfc3b386b8c', 'status': 0, 'value': {}}
+01/14/2018 10:46:55 INFO: Picture limit set to 1
+01/14/2018 10:46:58 DEBUG: POST http://127.0.0.1:57902/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 10:46:58 DEBUG: Finished Request {'sessionId': '27984da0-f942-11e7-b302-89ae3ef5d5a1', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 10:46:58 DEBUG: POST http://127.0.0.1:57902/wd/hub/session/27984da0-f942-11e7-b302-89ae3ef5d5a1/url {"url": "http://jandan.net/pic/page-163", "sessionId": "27984da0-f942-11e7-b302-89ae3ef5d5a1"}
+01/14/2018 10:47:04 DEBUG: Finished Request {'sessionId': '27984da0-f942-11e7-b302-89ae3ef5d5a1', 'status': 0, 'value': {}}
+01/14/2018 10:47:04 DEBUG: GET http://127.0.0.1:57902/wd/hub/session/27984da0-f942-11e7-b302-89ae3ef5d5a1/source {"sessionId": "27984da0-f942-11e7-b302-89ae3ef5d5a1"}
+01/14/2018 10:47:05 DEBUG: DELETE http://127.0.0.1:57902/wd/hub/session/27984da0-f942-11e7-b302-89ae3ef5d5a1 {"sessionId": "27984da0-f942-11e7-b302-89ae3ef5d5a1"}
+01/14/2018 10:47:05 DEBUG: Finished Request {'sessionId': '27984da0-f942-11e7-b302-89ae3ef5d5a1', 'status': 0, 'value': {}}
+01/14/2018 10:47:05 INFO: Starting the task from page 163
+01/14/2018 10:47:05 INFO: Parsing picture comment-3673006
+01/14/2018 10:47:05 DEBUG: Picture info:[id=comment-3673006, img_src=//wx1.sinaimg.cn/large/9b6be1c7ly1fnfed99nyej215c1j4kjl.jpg, like/dislike=66/18]
+01/14/2018 10:47:05 INFO: Max page limit reached, task finish!
+01/14/2018 10:50:22 INFO: Initializing the task...
+01/14/2018 10:50:25 DEBUG: POST http://127.0.0.1:58218/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 10:50:25 DEBUG: Finished Request {'sessionId': 'a319bc20-f942-11e7-b1e8-77cc102b45df', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 10:50:25 DEBUG: POST http://127.0.0.1:58218/wd/hub/session/a319bc20-f942-11e7-b1e8-77cc102b45df/url {"url": "http://jandan.net/pic", "sessionId": "a319bc20-f942-11e7-b1e8-77cc102b45df"}
+01/14/2018 10:50:31 DEBUG: Finished Request {'sessionId': 'a319bc20-f942-11e7-b1e8-77cc102b45df', 'status': 0, 'value': {}}
+01/14/2018 10:50:31 DEBUG: GET http://127.0.0.1:58218/wd/hub/session/a319bc20-f942-11e7-b1e8-77cc102b45df/source {"sessionId": "a319bc20-f942-11e7-b1e8-77cc102b45df"}
+01/14/2018 10:50:31 DEBUG: DELETE http://127.0.0.1:58218/wd/hub/session/a319bc20-f942-11e7-b1e8-77cc102b45df {"sessionId": "a319bc20-f942-11e7-b1e8-77cc102b45df"}
+01/14/2018 10:50:31 DEBUG: Finished Request {'sessionId': 'a319bc20-f942-11e7-b1e8-77cc102b45df', 'status': 0, 'value': {}}
+01/14/2018 10:50:34 DEBUG: POST http://127.0.0.1:58291/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 10:50:34 DEBUG: Finished Request {'sessionId': 'a8630970-f942-11e7-ad3b-f9e5d217acc8', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 10:50:34 DEBUG: POST http://127.0.0.1:58291/wd/hub/session/a8630970-f942-11e7-ad3b-f9e5d217acc8/url {"url": "http://jandan.net/pic/page-163", "sessionId": "a8630970-f942-11e7-ad3b-f9e5d217acc8"}
+01/14/2018 10:50:46 DEBUG: Finished Request {'sessionId': 'a8630970-f942-11e7-ad3b-f9e5d217acc8', 'status': 0, 'value': {}}
+01/14/2018 10:50:46 DEBUG: GET http://127.0.0.1:58291/wd/hub/session/a8630970-f942-11e7-ad3b-f9e5d217acc8/source {"sessionId": "a8630970-f942-11e7-ad3b-f9e5d217acc8"}
+01/14/2018 10:50:46 DEBUG: DELETE http://127.0.0.1:58291/wd/hub/session/a8630970-f942-11e7-ad3b-f9e5d217acc8 {"sessionId": "a8630970-f942-11e7-ad3b-f9e5d217acc8"}
+01/14/2018 10:50:46 DEBUG: Finished Request {'sessionId': 'a8630970-f942-11e7-ad3b-f9e5d217acc8', 'status': 0, 'value': {}}
+01/14/2018 10:50:46 INFO: Picture limit set to 1
+01/14/2018 10:50:49 DEBUG: POST http://127.0.0.1:58395/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 10:50:49 DEBUG: Finished Request {'sessionId': 'b1522d40-f942-11e7-bac6-f9d5f75fe9f1', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 10:50:49 DEBUG: POST http://127.0.0.1:58395/wd/hub/session/b1522d40-f942-11e7-bac6-f9d5f75fe9f1/url {"url": "http://jandan.net/pic/page-163", "sessionId": "b1522d40-f942-11e7-bac6-f9d5f75fe9f1"}
+01/14/2018 10:51:32 DEBUG: Finished Request {'sessionId': 'b1522d40-f942-11e7-bac6-f9d5f75fe9f1', 'status': 0, 'value': {}}
+01/14/2018 10:51:32 DEBUG: GET http://127.0.0.1:58395/wd/hub/session/b1522d40-f942-11e7-bac6-f9d5f75fe9f1/source {"sessionId": "b1522d40-f942-11e7-bac6-f9d5f75fe9f1"}
+01/14/2018 10:51:32 DEBUG: DELETE http://127.0.0.1:58395/wd/hub/session/b1522d40-f942-11e7-bac6-f9d5f75fe9f1 {"sessionId": "b1522d40-f942-11e7-bac6-f9d5f75fe9f1"}
+01/14/2018 10:51:32 DEBUG: Finished Request {'sessionId': 'b1522d40-f942-11e7-bac6-f9d5f75fe9f1', 'status': 0, 'value': {}}
+01/14/2018 10:51:32 INFO: Starting the task from page 163
+01/14/2018 10:51:32 INFO: Parsing picture comment-3673006
+01/14/2018 10:51:32 DEBUG: Picture info:[id=comment-3673006, img_src=//wx1.sinaimg.cn/large/9b6be1c7ly1fnfed99nyej215c1j4kjl.jpg, like/dislike=66/18]
+01/14/2018 10:51:32 INFO: Max page limit reached, task finish!
+01/14/2018 11:05:33 INFO: Initializing the task...
+01/14/2018 11:08:50 INFO: Picture limit set to 1
+01/14/2018 11:09:00 INFO: Starting the task from page 153
+01/14/2018 11:09:00 INFO: Parsing picture comment-3673031
+01/14/2018 11:09:00 INFO: Max page limit reached, task finish!
+01/14/2018 11:11:09 INFO: Initializing the task...
+01/14/2018 11:11:12 DEBUG: POST http://127.0.0.1:59982/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 11:11:13 DEBUG: Finished Request {'sessionId': '8a83c2c0-f945-11e7-aa9e-15ecc23778f0', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 11:11:13 DEBUG: POST http://127.0.0.1:59982/wd/hub/session/8a83c2c0-f945-11e7-aa9e-15ecc23778f0/url {"url": "http://jandan.net/pic", "sessionId": "8a83c2c0-f945-11e7-aa9e-15ecc23778f0"}
+01/14/2018 11:11:57 DEBUG: Finished Request {'sessionId': '8a83c2c0-f945-11e7-aa9e-15ecc23778f0', 'status': 0, 'value': {}}
+01/14/2018 11:11:57 DEBUG: GET http://127.0.0.1:59982/wd/hub/session/8a83c2c0-f945-11e7-aa9e-15ecc23778f0/source {"sessionId": "8a83c2c0-f945-11e7-aa9e-15ecc23778f0"}
+01/14/2018 11:11:57 DEBUG: DELETE http://127.0.0.1:59982/wd/hub/session/8a83c2c0-f945-11e7-aa9e-15ecc23778f0 {"sessionId": "8a83c2c0-f945-11e7-aa9e-15ecc23778f0"}
+01/14/2018 11:11:57 DEBUG: Finished Request {'sessionId': '8a83c2c0-f945-11e7-aa9e-15ecc23778f0', 'status': 0, 'value': {}}
+01/14/2018 11:12:00 DEBUG: POST http://127.0.0.1:60088/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 11:12:00 DEBUG: Finished Request {'sessionId': 'a70c72c0-f945-11e7-bb49-4dcbb22e4164', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 11:12:00 DEBUG: POST http://127.0.0.1:60088/wd/hub/session/a70c72c0-f945-11e7-bb49-4dcbb22e4164/url {"url": "http://jandan.net/pic/page-153", "sessionId": "a70c72c0-f945-11e7-bb49-4dcbb22e4164"}
+01/14/2018 11:14:43 DEBUG: Finished Request {'sessionId': 'a70c72c0-f945-11e7-bb49-4dcbb22e4164', 'status': 0, 'value': {}}
+01/14/2018 11:14:43 DEBUG: GET http://127.0.0.1:60088/wd/hub/session/a70c72c0-f945-11e7-bb49-4dcbb22e4164/source {"sessionId": "a70c72c0-f945-11e7-bb49-4dcbb22e4164"}
+01/14/2018 11:14:43 DEBUG: DELETE http://127.0.0.1:60088/wd/hub/session/a70c72c0-f945-11e7-bb49-4dcbb22e4164 {"sessionId": "a70c72c0-f945-11e7-bb49-4dcbb22e4164"}
+01/14/2018 11:14:43 DEBUG: Finished Request {'sessionId': 'a70c72c0-f945-11e7-bb49-4dcbb22e4164', 'status': 0, 'value': {}}
+01/14/2018 11:14:43 INFO: Picture limit set to 1
+01/14/2018 11:14:46 DEBUG: POST http://127.0.0.1:60340/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 11:14:46 DEBUG: Finished Request {'sessionId': '0a0f6ee0-f946-11e7-ba9c-69f6473a5ec1', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 11:14:46 DEBUG: POST http://127.0.0.1:60340/wd/hub/session/0a0f6ee0-f946-11e7-ba9c-69f6473a5ec1/url {"url": "http://jandan.net/pic/page-153", "sessionId": "0a0f6ee0-f946-11e7-ba9c-69f6473a5ec1"}
+01/14/2018 11:15:20 DEBUG: Finished Request {'sessionId': '0a0f6ee0-f946-11e7-ba9c-69f6473a5ec1', 'status': 0, 'value': {}}
+01/14/2018 11:15:20 DEBUG: GET http://127.0.0.1:60340/wd/hub/session/0a0f6ee0-f946-11e7-ba9c-69f6473a5ec1/source {"sessionId": "0a0f6ee0-f946-11e7-ba9c-69f6473a5ec1"}
+01/14/2018 11:15:20 DEBUG: DELETE http://127.0.0.1:60340/wd/hub/session/0a0f6ee0-f946-11e7-ba9c-69f6473a5ec1 {"sessionId": "0a0f6ee0-f946-11e7-ba9c-69f6473a5ec1"}
+01/14/2018 11:15:20 DEBUG: Finished Request {'sessionId': '0a0f6ee0-f946-11e7-ba9c-69f6473a5ec1', 'status': 0, 'value': {}}
+01/14/2018 11:15:20 INFO: Starting the task from page 153
+01/14/2018 11:15:20 INFO: Parsing picture comment-3673031
+01/14/2018 11:15:20 DEBUG: Picture info:[id=comment-3673031, img_src=//wx1.sinaimg.cn/large/74909671ly1fnff23o46xj20dc0j375t.jpg, like/dislike=232/20]
+01/14/2018 11:15:20 INFO: Max page limit reached, task finish!
+01/14/2018 11:18:14 INFO: Initializing the task...
+01/14/2018 11:18:18 DEBUG: POST http://127.0.0.1:60650/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 11:18:18 DEBUG: Finished Request {'sessionId': '87e8fe30-f946-11e7-8762-239172c30b90', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 11:18:18 DEBUG: POST http://127.0.0.1:60650/wd/hub/session/87e8fe30-f946-11e7-8762-239172c30b90/url {"url": "http://jandan.net/pic", "sessionId": "87e8fe30-f946-11e7-8762-239172c30b90"}
+01/14/2018 11:18:24 DEBUG: Finished Request {'sessionId': '87e8fe30-f946-11e7-8762-239172c30b90', 'status': 0, 'value': {}}
+01/14/2018 11:18:24 DEBUG: GET http://127.0.0.1:60650/wd/hub/session/87e8fe30-f946-11e7-8762-239172c30b90/source {"sessionId": "87e8fe30-f946-11e7-8762-239172c30b90"}
+01/14/2018 11:18:24 DEBUG: DELETE http://127.0.0.1:60650/wd/hub/session/87e8fe30-f946-11e7-8762-239172c30b90 {"sessionId": "87e8fe30-f946-11e7-8762-239172c30b90"}
+01/14/2018 11:18:24 DEBUG: Finished Request {'sessionId': '87e8fe30-f946-11e7-8762-239172c30b90', 'status': 0, 'value': {}}
+01/14/2018 11:18:27 DEBUG: POST http://127.0.0.1:60742/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 11:18:27 DEBUG: Finished Request {'sessionId': '8db5d360-f946-11e7-8d19-c9ca22420025', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 11:18:27 DEBUG: POST http://127.0.0.1:60742/wd/hub/session/8db5d360-f946-11e7-8d19-c9ca22420025/url {"url": "http://jandan.net/pic/page-153", "sessionId": "8db5d360-f946-11e7-8d19-c9ca22420025"}
+01/14/2018 11:18:32 DEBUG: Finished Request {'sessionId': '8db5d360-f946-11e7-8d19-c9ca22420025', 'status': 0, 'value': {}}
+01/14/2018 11:18:32 DEBUG: GET http://127.0.0.1:60742/wd/hub/session/8db5d360-f946-11e7-8d19-c9ca22420025/source {"sessionId": "8db5d360-f946-11e7-8d19-c9ca22420025"}
+01/14/2018 11:18:32 DEBUG: DELETE http://127.0.0.1:60742/wd/hub/session/8db5d360-f946-11e7-8d19-c9ca22420025 {"sessionId": "8db5d360-f946-11e7-8d19-c9ca22420025"}
+01/14/2018 11:18:32 DEBUG: Finished Request {'sessionId': '8db5d360-f946-11e7-8d19-c9ca22420025', 'status': 0, 'value': {}}
+01/14/2018 11:18:32 INFO: Picture limit set to 1
+01/14/2018 11:18:32 INFO: Starting the task from page 153
+01/14/2018 11:18:36 DEBUG: POST http://127.0.0.1:60844/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 11:18:36 DEBUG: Finished Request {'sessionId': '92af5300-f946-11e7-8022-096b531eec00', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 11:18:36 DEBUG: POST http://127.0.0.1:60844/wd/hub/session/92af5300-f946-11e7-8022-096b531eec00/url {"url": "http://jandan.net/pic/page-153", "sessionId": "92af5300-f946-11e7-8022-096b531eec00"}
+01/14/2018 11:18:42 DEBUG: Finished Request {'sessionId': '92af5300-f946-11e7-8022-096b531eec00', 'status': 0, 'value': {}}
+01/14/2018 11:18:42 DEBUG: GET http://127.0.0.1:60844/wd/hub/session/92af5300-f946-11e7-8022-096b531eec00/source {"sessionId": "92af5300-f946-11e7-8022-096b531eec00"}
+01/14/2018 11:18:42 DEBUG: DELETE http://127.0.0.1:60844/wd/hub/session/92af5300-f946-11e7-8022-096b531eec00 {"sessionId": "92af5300-f946-11e7-8022-096b531eec00"}
+01/14/2018 11:18:42 DEBUG: Finished Request {'sessionId': '92af5300-f946-11e7-8022-096b531eec00', 'status': 0, 'value': {}}
+01/14/2018 11:18:42 INFO: Parsing picture comment-3673031
+01/14/2018 11:18:42 DEBUG: Picture info:[id=comment-3673031, img_src=//wx1.sinaimg.cn/large/74909671ly1fnff23o46xj20dc0j375t.jpg, like/dislike=232/20]
+01/14/2018 11:18:42 INFO: Max page limit reached, task finish!
+01/14/2018 11:18:42 INFO: Writing picture ID 3673031 into file
+01/14/2018 11:18:59 INFO: Initializing the task...
+01/14/2018 11:19:02 DEBUG: POST http://127.0.0.1:60945/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 11:19:02 DEBUG: Finished Request {'sessionId': 'a26b08c0-f946-11e7-82a4-7d2b310794fb', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 11:19:02 DEBUG: POST http://127.0.0.1:60945/wd/hub/session/a26b08c0-f946-11e7-82a4-7d2b310794fb/url {"url": "http://jandan.net/pic", "sessionId": "a26b08c0-f946-11e7-82a4-7d2b310794fb"}
+01/14/2018 11:19:05 DEBUG: Finished Request {'sessionId': 'a26b08c0-f946-11e7-82a4-7d2b310794fb', 'status': 0, 'value': {}}
+01/14/2018 11:19:05 DEBUG: GET http://127.0.0.1:60945/wd/hub/session/a26b08c0-f946-11e7-82a4-7d2b310794fb/source {"sessionId": "a26b08c0-f946-11e7-82a4-7d2b310794fb"}
+01/14/2018 11:19:05 DEBUG: DELETE http://127.0.0.1:60945/wd/hub/session/a26b08c0-f946-11e7-82a4-7d2b310794fb {"sessionId": "a26b08c0-f946-11e7-82a4-7d2b310794fb"}
+01/14/2018 11:19:05 DEBUG: Finished Request {'sessionId': 'a26b08c0-f946-11e7-82a4-7d2b310794fb', 'status': 0, 'value': {}}
+01/14/2018 11:19:09 DEBUG: POST http://127.0.0.1:61021/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 11:19:09 DEBUG: Finished Request {'sessionId': 'a65a1d40-f946-11e7-b203-7f8f67d2cc16', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 11:19:09 DEBUG: POST http://127.0.0.1:61021/wd/hub/session/a65a1d40-f946-11e7-b203-7f8f67d2cc16/url {"url": "http://jandan.net/pic/page-153", "sessionId": "a65a1d40-f946-11e7-b203-7f8f67d2cc16"}
+01/14/2018 11:19:13 DEBUG: Finished Request {'sessionId': 'a65a1d40-f946-11e7-b203-7f8f67d2cc16', 'status': 0, 'value': {}}
+01/14/2018 11:19:13 DEBUG: GET http://127.0.0.1:61021/wd/hub/session/a65a1d40-f946-11e7-b203-7f8f67d2cc16/source {"sessionId": "a65a1d40-f946-11e7-b203-7f8f67d2cc16"}
+01/14/2018 11:19:13 DEBUG: DELETE http://127.0.0.1:61021/wd/hub/session/a65a1d40-f946-11e7-b203-7f8f67d2cc16 {"sessionId": "a65a1d40-f946-11e7-b203-7f8f67d2cc16"}
+01/14/2018 11:19:13 DEBUG: Finished Request {'sessionId': 'a65a1d40-f946-11e7-b203-7f8f67d2cc16', 'status': 0, 'value': {}}
+01/14/2018 11:19:13 INFO: Picture limit set to 0
+01/14/2018 11:19:13 INFO: Writing picture ID 3673031 into file
+01/14/2018 11:25:09 INFO: Initializing task hasn't been run, starting now...
+01/14/2018 11:25:09 INFO: Initializing the task...
+01/14/2018 11:25:12 DEBUG: POST http://127.0.0.1:61474/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 11:25:12 DEBUG: Finished Request {'sessionId': '7f25fe00-f947-11e7-bac0-1f579ffc7556', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 11:25:12 DEBUG: POST http://127.0.0.1:61474/wd/hub/session/7f25fe00-f947-11e7-bac0-1f579ffc7556/url {"url": "http://jandan.net/pic", "sessionId": "7f25fe00-f947-11e7-bac0-1f579ffc7556"}
+01/14/2018 11:25:25 DEBUG: Finished Request {'sessionId': '7f25fe00-f947-11e7-bac0-1f579ffc7556', 'status': 0, 'value': {}}
+01/14/2018 11:25:25 DEBUG: GET http://127.0.0.1:61474/wd/hub/session/7f25fe00-f947-11e7-bac0-1f579ffc7556/source {"sessionId": "7f25fe00-f947-11e7-bac0-1f579ffc7556"}
+01/14/2018 11:25:25 DEBUG: DELETE http://127.0.0.1:61474/wd/hub/session/7f25fe00-f947-11e7-bac0-1f579ffc7556 {"sessionId": "7f25fe00-f947-11e7-bac0-1f579ffc7556"}
+01/14/2018 11:25:25 DEBUG: Finished Request {'sessionId': '7f25fe00-f947-11e7-bac0-1f579ffc7556', 'status': 0, 'value': {}}
+01/14/2018 11:25:29 DEBUG: POST http://127.0.0.1:61558/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+01/14/2018 11:25:29 DEBUG: Finished Request {'sessionId': '88de6540-f947-11e7-9369-d35b0806b625', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+01/14/2018 11:25:29 DEBUG: POST http://127.0.0.1:61558/wd/hub/session/88de6540-f947-11e7-9369-d35b0806b625/url {"url": "http://jandan.net/pic/page-153", "sessionId": "88de6540-f947-11e7-9369-d35b0806b625"}
+01/14/2018 11:25:33 DEBUG: Finished Request {'sessionId': '88de6540-f947-11e7-9369-d35b0806b625', 'status': 0, 'value': {}}
+01/14/2018 11:25:33 DEBUG: GET http://127.0.0.1:61558/wd/hub/session/88de6540-f947-11e7-9369-d35b0806b625/source {"sessionId": "88de6540-f947-11e7-9369-d35b0806b625"}
+01/14/2018 11:25:33 DEBUG: DELETE http://127.0.0.1:61558/wd/hub/session/88de6540-f947-11e7-9369-d35b0806b625 {"sessionId": "88de6540-f947-11e7-9369-d35b0806b625"}
+01/14/2018 11:25:33 DEBUG: Finished Request {'sessionId': '88de6540-f947-11e7-9369-d35b0806b625', 'status': 0, 'value': {}}
+01/14/2018 11:25:33 INFO: No new pictures!
+2018/01/14 11:27:55 ERROR: 'NoneType' object has no attribute 'info'
+2018/01/14 11:29:09 INFO: Initializing task hasn't been run, starting now...
+2018/01/14 11:29:09 INFO: Initializing the task...
+2018/01/14 11:29:12 DEBUG: POST http://127.0.0.1:61927/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+2018/01/14 11:29:12 DEBUG: Finished Request {'sessionId': '0e3279c0-f948-11e7-9b23-493714d448d4', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+2018/01/14 11:29:12 DEBUG: POST http://127.0.0.1:61927/wd/hub/session/0e3279c0-f948-11e7-9b23-493714d448d4/url {"url": "http://jandan.net/pic", "sessionId": "0e3279c0-f948-11e7-9b23-493714d448d4"}
+2018/01/14 11:35:14 DEBUG: Finished Request {'sessionId': '0e3279c0-f948-11e7-9b23-493714d448d4', 'status': 0, 'value': {}}
+2018/01/14 11:35:14 DEBUG: GET http://127.0.0.1:61927/wd/hub/session/0e3279c0-f948-11e7-9b23-493714d448d4/source {"sessionId": "0e3279c0-f948-11e7-9b23-493714d448d4"}
+2018/01/14 11:35:14 DEBUG: DELETE http://127.0.0.1:61927/wd/hub/session/0e3279c0-f948-11e7-9b23-493714d448d4 {"sessionId": "0e3279c0-f948-11e7-9b23-493714d448d4"}
+2018/01/14 11:35:14 DEBUG: Finished Request {'sessionId': '0e3279c0-f948-11e7-9b23-493714d448d4', 'status': 0, 'value': {}}
+2018/01/14 11:35:17 DEBUG: POST http://127.0.0.1:62376/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+2018/01/14 11:35:17 DEBUG: Finished Request {'sessionId': 'e7c701b0-f948-11e7-95c8-597265a3998a', 'status': 0, 'value': {'browserName': 'phantomjs', 'version': '2.1.1', 'driverName': 'ghostdriver', 'driverVersion': '1.2.0', 'platform': 'windows-10-32bit', 'javascriptEnabled': True, 'takesScreenshot': True, 'handlesAlerts': False, 'databaseEnabled': False, 'locationContextEnabled': False, 'applicationCacheEnabled': False, 'browserConnectionEnabled': False, 'cssSelectorsEnabled': True, 'webStorageEnabled': False, 'rotatable': False, 'acceptSslCerts': False, 'nativeEvents': True, 'proxy': {'proxyType': 'direct'}}}
+2018/01/14 11:35:17 DEBUG: POST http://127.0.0.1:62376/wd/hub/session/e7c701b0-f948-11e7-95c8-597265a3998a/url {"url": "http://jandan.net/pic/page-153", "sessionId": "e7c701b0-f948-11e7-95c8-597265a3998a"}
+2018/01/14 11:35:42 DEBUG: Finished Request {'sessionId': 'e7c701b0-f948-11e7-95c8-597265a3998a', 'status': 0, 'value': {}}
+2018/01/14 11:35:42 DEBUG: GET http://127.0.0.1:62376/wd/hub/session/e7c701b0-f948-11e7-95c8-597265a3998a/source {"sessionId": "e7c701b0-f948-11e7-95c8-597265a3998a"}
+2018/01/14 11:35:42 DEBUG: DELETE http://127.0.0.1:62376/wd/hub/session/e7c701b0-f948-11e7-95c8-597265a3998a {"sessionId": "e7c701b0-f948-11e7-95c8-597265a3998a"}
+2018/01/14 11:35:42 DEBUG: Finished Request {'sessionId': 'e7c701b0-f948-11e7-95c8-597265a3998a', 'status': 0, 'value': {}}
+2018/01/14 11:35:43 INFO: No new pictures!
