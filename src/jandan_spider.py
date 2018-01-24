@@ -1,11 +1,11 @@
-import os
+import os, time
 
 from bs4 import BeautifulSoup
-from selenium import webdriver
+from selenium import webdriver, common
 
 from .models import PictureContainer
 from .picture_filters import PictureFilter, LikeDislikePictureFilter
-from .setup import *
+from .tasks.get_tucao_task import *
 
 logging.basicConfig(filename=LOG_FILE,
                     level=LOG_LEVEL,
@@ -49,7 +49,8 @@ class Spider(object):
             return False
         else:
             if self.stop_pic_id != -1:
-                self.max_pic_to_fetch = self.start_pic_id - self.stop_pic_id
+                self.max_pic_to_fetch = \
+                    min(self.max_pic_to_fetch, self.start_pic_id - self.stop_pic_id)
 
         logger.info("Picture limit set to %d", self.max_pic_to_fetch)
         self.initialized = True
@@ -69,16 +70,28 @@ class Spider(object):
                 return
 
         curr_pageno = self.start_pageno
-        ret = []
+        ret = {}
+        tucao_task_runner = GetPicTucaoTaskRunner()
 
         while self.max_pic_to_fetch > 0:
             logger.info("Starting the task from page %d", curr_pageno)
             page_soup = self._parse_url(JANDAN_PIC_URL_PAGENO.format(curr_pageno))
 
             pic_list = page_soup.find("ol", {"class": "commentlist"})
+
+            # TODO jandan may return 'too many requests' error, on this case, pic_list will be None
+            sleep_sec = 2
+            while not pic_list and sleep_sec <= sleep_sec*2*2*2:
+                logger.warning("Can't find picture list, waiting {} seconds to retry..".format(sleep_sec))
+                time.sleep(sleep_sec)
+                pic_list = page_soup.find("ol", {"class": "commentlist"})
+                sleep_sec *= 2
+
+            if not pic_list and sleep_sec >= sleep_sec*2*2*2:
+                raise RuntimeError("Failed to get page content, mission aborted!")
+
             pic_elements = pic_list.find_all("li")
 
-            ret = []
             for pic_ele in pic_elements:
                 pic_id = pic_ele['id']
 
@@ -93,8 +106,10 @@ class Spider(object):
                 if not pc:
                     continue
 
+                tucao_task_runner.start(pic_id)
+
                 self.max_pic_to_fetch -= 1
-                ret.append(pc)
+                ret[pic_id] = pc
 
                 if self.max_pic_to_fetch == 0:
                     logger.info("Max page limit reached, task finish!")
@@ -103,6 +118,12 @@ class Spider(object):
             if self.max_pic_to_fetch > 0:
                 logger.info("Page %d finished!", curr_pageno)
                 curr_pageno -= 1
+
+        # Collect get_tucao sub tasks results
+        tucao_task_ret = tucao_task_runner.get_results()
+        for tucao_li in tucao_task_ret:
+            for tc in tucao_li:
+                ret[tc.pic_id].hot_tucao = tc
 
         self._post_task()
 
@@ -120,21 +141,39 @@ class Spider(object):
         else:
             raise ValueError("curr_page is not a number!!")
 
-    def _curr_pageno(self, soup):
+    @classmethod
+    def _curr_pageno(cls, soup):
         return soup.find("span", {"class": "current-comment-page"}).string[1:-1]
 
-    def _parse_url(self, url):
-        driver = webdriver.PhantomJS()
+    @classmethod
+    def _parse_url(cls, url):
+        co = webdriver.ChromeOptions()
+        co.set_headless(True)
+        driver = webdriver.Chrome(chrome_options=co)
 
+        wait_sec = 2
         try:
-            driver.get(url)
-            ret = BeautifulSoup(driver.page_source, BEAUTIFUL_SOUP_BUILDER)
-            return ret
-        finally:
-            driver.quit()
+            while True:
+                try:
+                    driver.get(url)
+                    logger.debug("Page content reterived, converting to BS4 object!")
+                    ret = BeautifulSoup(driver.page_source, BEAUTIFUL_SOUP_BUILDER)
+                    return ret
+                except common.exceptions.TimeoutException as te:
+                    if wait_sec > 8:
+                        raise te
 
-    def _get_start_pic_id(self, start_page_url):
-        page_soup = self._parse_url(start_page_url)
+                    logger.warning(
+                        "Timeout during the process, retrying after {} seconds".format(wait_sec))
+                    time.sleep(wait_sec)
+                    wait_sec *= 2
+                    continue
+        finally:
+            driver.close()
+
+    @classmethod
+    def _get_start_pic_id(cls, start_page_url):
+        page_soup = Spider._parse_url(start_page_url)
         pic_id_str = page_soup.find("ol").li['id']
         return int(pic_id_str[pic_id_str.index('-')+1:])
 
@@ -160,7 +199,8 @@ class Spider(object):
             else:
                 logger.warning("Can't find link for image %s at page %d!", pic_id, curr_pageno)
 
-    def _get_img_link(self, picture_div):
+    @classmethod
+    def _get_img_link(cls, picture_div):
         div_ele = picture_div.div.div
         div_ele = div_ele.find_all("div")[1]
         if div_ele:
