@@ -8,8 +8,9 @@ current task starts from: start_pageno = first_pageno - SEARCH_BACK
 SEARCH_BACK = 2
 # This value will be used if the last stop point file doesn't exist
 # or the picture to grab on this task is larger than this number
-DEFAULT_PIC_PER_TASK = 100
+DEFAULT_PIC_PER_TASK = 26
 PICUTURE_ID_PREFIX = "comment-"
+TASK_BATCH_SIZE = 3
 """
 File to store the picture ID which last task starts at
 """

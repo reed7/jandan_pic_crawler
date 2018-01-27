@@ -1,5 +1,3 @@
-from .utils import *
-
 class PictureContainer(object):
 
     def __init__(self, id, like, dislike, img_src=None):
