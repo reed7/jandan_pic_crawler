@@ -15,12 +15,16 @@ def unicode_to_char(uni_str):
         return ""
 
     try:
-        str_ascii = ord(uni_str)
+        char_code = ord(uni_str)
     except TypeError as te:
         logging.error(te.with_traceback())
         raise te
 
-    return chr(str_ascii)
+    return chr(char_code)
+
+
+def unicode_seq_to_str(uni_seq):
+    return "".join([unicode_to_char(c) for c in uni_seq])
 
 
 def parse_url_content_to_bs(url):

@@ -6,10 +6,6 @@ from .tasks.get_picture_task import GetPictureTaskRunner
 from .setup import *
 from .utils import parse_url_content_to_bs, MyJSONEncoder
 
-logging.basicConfig(filename=LOG_FILE,
-                    level=LOG_LEVEL,
-                    format=LOG_FORMAT,
-                    datefmt=LOG_DATE_FORMAT)
 
 logger = logging.getLogger(__name__)
 
@@ -73,10 +69,16 @@ class JandanSpider(object):
         queue = mp.Queue()
         pic_got = 0
 
+        lock = mp.Lock()
+        picture_counter = mp.Value('i', 0)
         while True:
             task_li = []
-            for i in range(TASK_BATCH_SIZE):
-                pic_task = GetPictureTaskRunner(curr_pageno, queue, self.picture_filter)
+            for i in range(min(self.max_pic_to_fetch, TASK_BATCH_SIZE)):
+                pic_task = GetPictureTaskRunner(curr_pageno, queue,
+                                                self.picture_filter,
+                                                self.max_pic_to_fetch,
+                                                picture_counter,
+                                                lock)
                 pic_task.start()
                 task_li.append(pic_task)
                 curr_pageno -= 1
@@ -86,20 +88,19 @@ class JandanSpider(object):
 
             while not queue.empty():
                 ret.append(queue.get(block=False))
-                pic_got += 1
 
-            # The problem of stop the task on the main process is,
-            # the number of pictures fetched may reach the limit in the
-            # middle of any get picture task
-            if pic_got >= self.max_pic_to_fetch:
-                logger.info("Got {} pictures, task finished!".format(pic_got))
+            if picture_counter.value >= self.max_pic_to_fetch:
                 break
+
+        logger.info("Plan to get {} pictures, "
+                    "got {} pictures, task finished!".format(self.max_pic_to_fetch,
+                                                             len(ret)))
 
         self._post_task()
 
         # return ret
-        json_encoder = MyJSONEncoder()
-        with open("result_json", "w+") as ret_file:
+        json_encoder = MyJSONEncoder(ensure_ascii=False)
+        with open("result_json", "w+", encoding="utf-8") as ret_file:
             for r in ret:
                 ret_file.write(json_encoder.encode(r))
 

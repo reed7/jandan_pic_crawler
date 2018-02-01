@@ -11,11 +11,16 @@ logger = logging.getLogger(__name__)
 
 class GetPictureTaskRunner(Process):
 
-    def __init__(self, page_no, queue, pic_filter):
+    def __init__(self, page_no, queue, pic_filter,
+                 max_picture_fetch, picture_counter,
+                 lock):
         Process.__init__(self)
         self.queue = queue
         self.page_no = page_no
         self.picture_filter = pic_filter
+        self.max_fetch = max_picture_fetch
+        self.pic_counter = picture_counter
+        self.lock = lock
 
     def run(self):
 
@@ -44,6 +49,7 @@ class GetPictureTaskRunner(Process):
         tucao_queue = Queue()
 
         for pic_ele in pic_elements:
+
             pic_id = pic_ele['id']
 
             if PICUTURE_ID_PREFIX not in pic_id:
@@ -54,6 +60,8 @@ class GetPictureTaskRunner(Process):
             pc = self._build_picture_container(pic_id, pic_ele, self.page_no)
             if not pc:
                 continue
+            elif not self._has_more_task():
+                break
 
             tucao_task_runner = GetPicTucaoTaskRunner(pic_id, tucao_queue)
             tucao_task_runner.start()
@@ -89,19 +97,33 @@ class GetPictureTaskRunner(Process):
         pc = PictureContainer(pic_id, like, dislike)
 
         if self.picture_filter.accept(pc):
-            img_src = self._get_img_link(pic_ele)
+            img_link = self._get_img_link(pic_ele)
 
-            if img_src:
-                pc.img_src = img_src["href"]
+            if img_link:
+                pc.img_src = img_link
                 logger.debug(pc)
                 return pc  # Only picture with a link is valid
             else:
                 logger.warning("Can't find link for image %s at page %d!", pic_id, curr_pageno)
 
+    def _has_more_task(self):
+        with self.lock:
+            if self.pic_counter.value >= self.max_fetch:
+                return False
+            else:
+                self.pic_counter.value += 1
+                return True
+
     @classmethod
     def _get_img_link(cls, picture_div):
         div_ele = picture_div.div.div
-        div_ele = div_ele.find_all("div")[1]
-        if div_ele:
-            return div_ele.p.a
+        div_ele = div_ele.find("div", {"class", "text"})
+        if div_ele and div_ele.p:
+            img_a = div_ele.p.img
+            if img_a:
+                try:
+                    return img_a["org_src"]
+                except KeyError:
+                    return img_a["src"]
+
 

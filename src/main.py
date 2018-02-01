@@ -1,5 +1,16 @@
+#!/usr/bin/env python
+
 import logging
+
 import src.jandan_spider as js
+import src.setup as setup
+
+
+logging.basicConfig(filename=setup.LOG_FILE,
+                    level=setup.LOG_LEVEL,
+                    format=setup.LOG_FORMAT,
+                    datefmt=setup.LOG_DATE_FORMAT)
+
 
 logger = logging.getLogger(__name__)
 

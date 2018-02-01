@@ -1,8 +1,7 @@
 import unittest
 import logging
 
-from ..utils import parse_url_content_to_bs, unicode_to_char
-
+from ..utils import *
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -38,6 +37,13 @@ class UtilTests(unittest.TestCase):
 
         ret = unicode_to_char(None)
         self.assertEqual("", ret)
+
+    def test_uni_to_str(self):
+        ret = unicode_seq_to_str("\u9999\u9999")
+
+        self.assertIsNotNone(ret)
+        self.assertEqual(ret, '香香')
+
 
 if __name__ == "__main__":
     unittest.main()

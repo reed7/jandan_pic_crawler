@@ -1,3 +1,6 @@
+from .utils import unicode_seq_to_str
+
+
 class PictureContainer(object):
 
     def __init__(self, id, like, dislike, img_src=None):
@@ -20,9 +23,9 @@ class PictureTucao(object):
                  parent=None, date=None):
         self.id = id
         self.pic_id = pic_id
-        self.author = author
+        self.author = unicode_seq_to_str(author)
         self.date = date
-        self.content = content
+        self.content = unicode_seq_to_str(content)
         self.parent = parent
         self.like = like
         self.dislike = dislike
