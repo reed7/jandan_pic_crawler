@@ -67,7 +67,6 @@ class JandanSpider(object):
         curr_pageno = self.start_pageno
         ret = []
         queue = mp.Queue()
-        pic_got = 0
 
         lock = mp.Lock()
         picture_counter = mp.Value('i', 0)
