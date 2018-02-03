@@ -67,9 +67,9 @@ class JandanSpider(object):
         curr_pageno = self.start_pageno
         ret = []
         queue = mp.Queue()
-
         lock = mp.Lock()
         picture_counter = mp.Value('i', 0)
+
         while True:
             task_li = []
             for i in range(min(self.max_pic_to_fetch, TASK_BATCH_SIZE)):
